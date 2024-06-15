@@ -18,6 +18,8 @@ export const metadata: Metadata = {
 const Home = () => {
    return (
       <>
+         <Header />
+
          <main className={locS.main}>
             <section className={locS.hero}>
                <div className={`${locS.heroWrapper} ${globS.container_1180}`}>
@@ -111,6 +113,8 @@ const Home = () => {
                </main>
             </section>
          </main>
+
+         <Footer />
       </>
    )
 }

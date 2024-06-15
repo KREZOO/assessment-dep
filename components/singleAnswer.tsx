@@ -82,7 +82,7 @@ const SingleAnswer: React.FC<AnswersProps> = ({ questionId }) => {
          ))}
 
          <button type="button" className={s.addButton} onClick={addOptionHandler}>
-            <Image src="./icons/add-icon.svg" alt="Add option" width={32} height={32} />
+            <Image src="/icons/add-icon.svg" alt="Add option" width={32} height={32} />
          </button>
       </div>
    )

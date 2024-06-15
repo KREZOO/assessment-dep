@@ -88,7 +88,7 @@ const Question: React.FC<QuestionProps> = ({ id }) => {
                   className={s.button}
                   onClick={() => dispatch(duplicateQuestion(id))}
                >
-                  <Image src="./icons/duplicate-icon.svg" alt="Duplicate" width={16} height={16} />
+                  <Image src="/icons/duplicate-icon.svg" alt="Duplicate" width={16} height={16} />
                   Дублювати
                </button>
 
@@ -100,7 +100,7 @@ const Question: React.FC<QuestionProps> = ({ id }) => {
                      dispatch(resetCountersForQuestionId(id))
                   }}
                >
-                  <Image src="./icons/delete-icon.svg" alt="Delete" width={16} height={16} />
+                  <Image src="/icons/delete-icon.svg" alt="Delete" width={16} height={16} />
                   Видалити
                </button>
             </div>

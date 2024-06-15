@@ -47,6 +47,8 @@ const MyTasks = () => {
 
    return (
       <>
+         <Header />
+
          <main className={locS.main}>
             <div className={globS.container_1100}>
                {selectedListMode ? (
@@ -121,6 +123,8 @@ const MyTasks = () => {
                )}
             </div>
          </main>
+
+         <Footer />
       </>
    )
 }

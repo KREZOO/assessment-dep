@@ -1,10 +1,6 @@
 import type { Metadata } from 'next'
 
 import StoreProvider from './storeProvider'
-
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-
 import '@/styles/reset.css'
 import s from '@/styles/global.module.scss'
 
@@ -17,9 +13,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
    return (
       <html lang="en">
          <body className={s.body}>
-            <Header />
             <StoreProvider>{children}</StoreProvider>
-            <Footer />
          </body>
       </html>
    )
