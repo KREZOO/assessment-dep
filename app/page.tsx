@@ -35,7 +35,7 @@ const Home = () => {
                   </div>
 
                   <Image
-                     src="/images/hero-image.png"
+                     src="./images/hero-image.png"
                      alt="Hero image"
                      className={locS.heroImage}
                      width={505}
