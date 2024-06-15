@@ -80,7 +80,7 @@ const SomeAnswers: React.FC<AnswersProps> = ({ questionId }) => {
 
                <button type="button" onClick={() => removeOptionHandler(option.id)}>
                   <Image
-                     src="./icons/delete-option-icon.svg"
+                     src="/icons/delete-option-icon.svg"
                      alt="Delete option"
                      width={24}
                      height={24}

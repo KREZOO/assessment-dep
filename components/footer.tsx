@@ -79,7 +79,7 @@ const Footer = () => {
                   <ul className={locS.listItems}>
                      <li>
                         <Image
-                           src="./icons/support-icon.svg"
+                           src="/icons/support-icon.svg"
                            className={globS.mr_4}
                            width={24}
                            height={24}
@@ -95,7 +95,7 @@ const Footer = () => {
                      </li>
                      <li>
                         <Image
-                           src="./icons/email-icon.svg"
+                           src="/icons/email-icon.svg"
                            className={globS.mr_4}
                            width={24}
                            height={24}
@@ -116,7 +116,7 @@ const Footer = () => {
             <div className={locS.socialLinks}>
                <Link href="telegram">
                   <Image
-                     src="./icons/telegram-icon.svg"
+                     src="/icons/telegram-icon.svg"
                      className={globS.mr_4}
                      width={32}
                      height={32}
@@ -127,7 +127,7 @@ const Footer = () => {
 
                <Link href="facebook">
                   <Image
-                     src="./icons/facebook-icon.svg"
+                     src="/icons/facebook-icon.svg"
                      className={globS.mr_4}
                      width={32}
                      height={32}
@@ -138,7 +138,7 @@ const Footer = () => {
 
                <Link href="instagram">
                   <Image
-                     src="./icons/instagram-icon.svg"
+                     src="/icons/instagram-icon.svg"
                      className={globS.mr_4}
                      width={32}
                      height={32}
@@ -149,7 +149,7 @@ const Footer = () => {
 
                <Link href="twitter">
                   <Image
-                     src="./icons/twitter-icon.svg"
+                     src="/icons/twitter-icon.svg"
                      className={globS.mr_4}
                      width={32}
                      height={32}

@@ -62,7 +62,7 @@ const MyTasks = () => {
                         <div className={locS.modes}>
                            <button onClick={() => dispatch(setListMode(false))}>
                               <Image
-                                 src="./icons/table-icon.svg"
+                                 src="/icons/table-icon.svg"
                                  width={40}
                                  height={40}
                                  alt="mode table"
@@ -71,7 +71,7 @@ const MyTasks = () => {
 
                            <button onClick={() => dispatch(setListMode(true))}>
                               <Image
-                                 src="./icons/list-icon.svg"
+                                 src="/icons/list-icon.svg"
                                  width={40}
                                  height={40}
                                  alt="mode list"
@@ -94,7 +94,7 @@ const MyTasks = () => {
                         <div className={locS.modes}>
                            <button onClick={() => dispatch(setListMode(false))}>
                               <Image
-                                 src="./icons/table-icon.svg"
+                                 src="/icons/table-icon.svg"
                                  width={40}
                                  height={40}
                                  alt="mode table"
@@ -103,7 +103,7 @@ const MyTasks = () => {
 
                            <button onClick={() => dispatch(setListMode(true))}>
                               <Image
-                                 src="./icons/list-icon.svg"
+                                 src="/icons/list-icon.svg"
                                  width={40}
                                  height={40}
                                  alt="mode list"

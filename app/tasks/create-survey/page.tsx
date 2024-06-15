@@ -47,7 +47,7 @@ const CreateSurvey = () => {
 
                   <button type="button" onClick={() => dispatch(addQuestion())}>
                      <Image
-                        src="./icons/add-icon.svg"
+                        src="/icons/add-icon.svg"
                         alt="Add question icon"
                         width={50}
                         height={50}

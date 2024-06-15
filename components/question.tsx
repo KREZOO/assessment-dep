@@ -75,7 +75,7 @@ const Question: React.FC<QuestionProps> = ({ id }) => {
             <div className={s.buttons}>
                <button type="button" className={s.button}>
                   <Image
-                     src="./icons/description-icon.svg"
+                     src="/icons/description-icon.svg"
                      alt="Description"
                      width={16}
                      height={16}

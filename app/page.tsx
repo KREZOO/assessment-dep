@@ -35,7 +35,7 @@ const Home = () => {
                   </div>
 
                   <Image
-                     src="./images/hero-image.png"
+                     src="/images/hero-image.png"
                      alt="Hero image"
                      className={locS.heroImage}
                      width={505}
@@ -51,7 +51,7 @@ const Home = () => {
             ${globS.mb_80}`}
             >
                <Image
-                  src="./images/about-site.png"
+                  src="/images/about-site.png"
                   alt="About site"
                   className={locS.aboutSiteImage}
                   width={340}

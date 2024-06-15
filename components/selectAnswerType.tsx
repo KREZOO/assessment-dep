@@ -39,7 +39,7 @@ const SelectAnswerType: React.FC<SelectAnswerTypeProps> = ({ questionId }) => {
                         {selectedOption.name}
 
                         <Image
-                           src="./icons/arrow-down-icon.svg"
+                           src="/icons/arrow-down-icon.svg"
                            alt="Arrow down"
                            width={16}
                            height={16}
@@ -81,7 +81,7 @@ const SelectAnswerType: React.FC<SelectAnswerTypeProps> = ({ questionId }) => {
 
                                        {selected && (
                                           <Image
-                                             src="./icons/checkmark-icon.svg"
+                                             src="/icons/checkmark-icon.svg"
                                              alt="Checkmark"
                                              width={16}
                                              height={16}

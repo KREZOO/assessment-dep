@@ -71,7 +71,7 @@ const InputForm: React.FC<InputFormProps> = ({
                {hasError && (
                   <Image
                      className={s.errorIcon}
-                     src="./icons/input-fields/input-error.svg"
+                     src="/icons/input-fields/input-error.svg"
                      alt="error icon"
                      width={24}
                      height={24}
