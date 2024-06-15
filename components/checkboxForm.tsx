@@ -4,7 +4,7 @@ import { useFormContext } from 'react-hook-form'
 
 import { CheckboxFormProps } from '@/types/checkboxFormProps'
 
-import s from '@/styles/components/CheckboxFormStyles.module.scss'
+import s from '@/styles/components/checkboxFormStyles.module.scss'
 
 const CheckboxForm: React.FC<CheckboxFormProps> = ({ label, name, required }) => {
    const { register } = useFormContext()
