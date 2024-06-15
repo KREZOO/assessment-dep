@@ -43,7 +43,7 @@ const DropdownMenu: React.FC = () => {
          <div>
             <Menu.Button onClick={() => setIsOpen(!isOpen)}>
                <Image
-                  src="/icons/dropdown/dropdown-icon.svg"
+                  src="./icons/dropdown/dropdown-icon.svg"
                   width={24}
                   height={24}
                   alt="Dropdown"
@@ -59,7 +59,7 @@ const DropdownMenu: React.FC = () => {
                         className={`${active ? locS.active : ''}`}
                      >
                         <Image
-                           src="/icons/dropdown/edit-icon.svg"
+                           src="./icons/dropdown/edit-icon.svg"
                            width={16}
                            height={16}
                            alt="Edit"
@@ -76,7 +76,7 @@ const DropdownMenu: React.FC = () => {
                         className={`${active ? locS.active : ''}`}
                      >
                         <Image
-                           src="/icons/dropdown/result-icon.svg"
+                           src="./icons/dropdown/result-icon.svg"
                            alt="Result"
                            width={16}
                            height={16}
@@ -93,7 +93,7 @@ const DropdownMenu: React.FC = () => {
                         className={`${active ? locS.active : ''}`}
                      >
                         <Image
-                           src="/icons/dropdown/share-outline-icon.svg"
+                           src="./icons/dropdown/share-outline-icon.svg"
                            alt="Share"
                            width={16}
                            height={16}
@@ -110,7 +110,7 @@ const DropdownMenu: React.FC = () => {
                         className={`${active ? locS.active : ''}`}
                      >
                         <Image
-                           src="/icons/dropdown/copy-icon.svg"
+                           src="./icons/dropdown/copy-icon.svg"
                            width={16}
                            height={16}
                            alt="Copy"
@@ -127,7 +127,7 @@ const DropdownMenu: React.FC = () => {
                         className={`${active ? locS.active : ''}`}
                      >
                         <Image
-                           src="/icons/dropdown/trash-icon.svg"
+                           src="./icons/dropdown/trash-icon.svg"
                            alt="Delete"
                            width={16}
                            height={16}

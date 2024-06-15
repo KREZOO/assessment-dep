@@ -41,7 +41,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ active, closeModal }) => {
                >
                   <Image
                      className={globalS.f1}
-                     src="/images/auth-modal-image.jpg"
+                     src="./images/auth-modal-image.jpg"
                      alt="auth modal image"
                      width={1000}
                      height={1000}

@@ -34,7 +34,7 @@ const QuestionScoreCounter: React.FC<QuestionScoreCounterProps> = ({ questionId 
                   className={`${s.button} ${s.buttonIncrement}`}
                   onClick={incrementScore}
                >
-                  <Image src="/icons/increment-icon.svg" alt="Plus" width={12} height={12} />
+                  <Image src="./icons/increment-icon.svg" alt="Plus" width={12} height={12} />
                </button>
 
                <button
@@ -42,7 +42,7 @@ const QuestionScoreCounter: React.FC<QuestionScoreCounterProps> = ({ questionId 
                   className={`${s.button} ${s.buttonDecrement}`}
                   onClick={decrementScore}
                >
-                  <Image src="/icons/decrement-icon.svg" alt="Minus" width={12} height={12} />
+                  <Image src="./icons/decrement-icon.svg" alt="Minus" width={12} height={12} />
                </button>
             </div>
          </div>

@@ -54,7 +54,7 @@ const DropdownSort = () => {
       <Menu as="div" className={locS.menu}>
          <div>
             <Menu.Button onClick={() => setIsOpen(!isOpen)}>
-               <Image src="/icons/dropdown/sort-icon.svg" width={40} height={40} alt="sort" />
+               <Image src="./icons/dropdown/sort-icon.svg" width={40} height={40} alt="sort" />
             </Menu.Button>
          </div>
          <Transition show={isOpen} as={Fragment} {...transitionClasses}>

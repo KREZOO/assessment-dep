@@ -17,7 +17,7 @@ const Header = () => {
          <div className={globalS.container_1180}>
             <div className={localS.wrapper}>
                <Link href="/" className={localS.logo}>
-                  <Image src="/images/logo.png" width={60} height={60} alt="Logo" priority />
+                  <Image src="./images/logo.png" width={60} height={60} alt="Logo" priority />
                </Link>
 
                <nav className={localS.navigation}>

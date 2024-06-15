@@ -38,7 +38,7 @@ const TopicInput: React.FC = () => {
          />
 
          <button type="button" className={s.button} onClick={handleSaveTopic}>
-            <Image src="/icons/dropdown/edit-icon.svg" alt="Edit" width={40} height={40} />
+            <Image src="./icons/dropdown/edit-icon.svg" alt="Edit" width={40} height={40} />
          </button>
       </div>
    )

@@ -72,7 +72,7 @@ const SingleAnswer: React.FC<AnswersProps> = ({ questionId }) => {
 
                <button type="button" onClick={() => removeOptionHandler(option.id)}>
                   <Image
-                     src="/icons/delete-option-icon.svg"
+                     src="./icons/delete-option-icon.svg"
                      alt="Delete option"
                      width={24}
                      height={24}
@@ -82,7 +82,7 @@ const SingleAnswer: React.FC<AnswersProps> = ({ questionId }) => {
          ))}
 
          <button type="button" className={s.addButton} onClick={addOptionHandler}>
-            <Image src="/icons/add-icon.svg" alt="Add option" width={32} height={32} />
+            <Image src="./icons/add-icon.svg" alt="Add option" width={32} height={32} />
          </button>
       </div>
    )
