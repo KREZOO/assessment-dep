@@ -62,7 +62,7 @@ const MyTasks = () => {
                         <div className={locS.modes}>
                            <button onClick={() => dispatch(setListMode(false))}>
                               <Image
-                                 src="./public/icons/table-icon.svg"
+                                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icons/table-icon.svg`}
                                  width={40}
                                  height={40}
                                  alt="mode table"
