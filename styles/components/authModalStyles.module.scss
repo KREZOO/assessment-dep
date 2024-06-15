@@ -25,6 +25,7 @@
    .content {
       width: 73.75rem;
       display: flex;
+      gap: 8.125rem;
       z-index: 10;
 
       overflow: hidden;
@@ -32,6 +33,10 @@
       max-height: 45rem;
       background-color: $bg-dark-blue;
       border-radius: 2.5rem;
+
+      .columnLeft {
+         max-width: 36.875rem;
+      }
 
       .columnRight {
          display: flex;

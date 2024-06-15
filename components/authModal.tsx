@@ -40,14 +40,14 @@ const AuthModal: React.FC<AuthModalProps> = ({ active, closeModal }) => {
                   transition={{ duration: 0.3 }}
                >
                   <Image
-                     className={globalS.f1}
+                     className={localS.columnLeft}
                      src="/images/auth-modal-image.jpg"
                      alt="auth modal image"
-                     width={1000}
-                     height={1000}
+                     width={576}
+                     height={720}
                   />
 
-                  <div className={`${globalS.f1} ${localS.columnRight}`}>
+                  <div className={localS.columnRight}>
                      <div className={localS.wrapper}>
                         <div className={localS.switchFormButtons}>
                            <button
