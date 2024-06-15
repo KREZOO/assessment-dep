@@ -1,0 +1,23 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.answerScoreCounter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 0.5rem;
+   width: 4.6875rem;
+   border: 1px solid $dark-grey-color;
+   border-radius: 0.5rem;
+   background-color: $bg-white;
+
+   .buttons {
+      display: flex;
+      flex-direction: column;
+
+      .button {
+         width: 0.75rem;
+         height: 0.75rem;
+      }
+   }
+}

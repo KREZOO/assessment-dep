@@ -1,0 +1,32 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.featureCard {
+   display: flex;
+   flex-direction: column;
+   gap: 2.5rem;
+   align-items: center;
+   width: 31.25rem;
+
+   .image {
+      border-radius: 0.5rem;
+   }
+
+   .divider {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      .title {
+         font-weight: 700;
+         font-size: 2rem;
+         line-height: 100%;
+         text-align: center;
+      }
+
+      .description {
+         font-size: 1.125rem;
+         line-height: 140%;
+      }
+   }
+}

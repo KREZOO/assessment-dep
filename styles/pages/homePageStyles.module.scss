@@ -1,0 +1,108 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.main {
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+   padding-bottom: 8.75rem;
+
+   .h2 {
+      font-family: $second-family;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 100%;
+   }
+
+   .hero {
+      background-color: $bg-blue;
+      width: 100%;
+
+      .heroWrapper {
+         display: flex;
+         justify-content: space-between;
+         gap: 4.375rem;
+         padding: 3.75rem 0;
+
+         .heroTextContent {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5625rem;
+
+            .heroTitle {
+               font-weight: 700;
+               font-size: 3rem;
+               line-height: 120%;
+               color: $bg-white;
+            }
+
+            .heroDescription {
+               font-size: 1.125rem;
+               color: $bg-white;
+            }
+         }
+      }
+   }
+
+   .aboutSite {
+      position: relative;
+      display: flex;
+      gap: 3.75rem;
+
+      border-radius: 0.5rem;
+      padding: 3.4375rem 6.25rem;
+      background-color: $second-color;
+
+      &::before {
+         content: '';
+         position: absolute;
+         bottom: -5rem;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         background-color: $dark-grey-color;
+      }
+
+      .aboutSiteTextContent {
+         display: flex;
+         flex-direction: column;
+         gap: 1.5625rem;
+         max-width: 36.25rem;
+         text-wrap: balance;
+
+         .aboutSiteText {
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 140%;
+            color: $dark-grey-2-color;
+         }
+      }
+   }
+
+   .mainFeatures {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      width: 100%;
+
+      .mainFeaturesHeader {
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         max-width: 50rem;
+
+         .mainFeaturesDescription {
+            font-weight: 600;
+            font-size: 1.125rem;
+            line-height: 140%;
+            color: $light-grey-2-color;
+         }
+      }
+
+      .mainFeaturesCards {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 2.5rem 11.25rem;
+      }
+   }
+}

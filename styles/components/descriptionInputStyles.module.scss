@@ -1,0 +1,22 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.textarea {
+   width: 100%;
+   padding: 0.625rem 1.25rem;
+   border: 1px solid $input-border-color-2;
+   border-radius: 0.5rem;
+   background-color: $bg-white;
+   box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+   resize: none;
+   outline: none;
+
+   &::placeholder {
+      color: $dark-grey-color;
+   }
+
+   &:focus {
+      border: 1px solid $bg-blue;
+      box-shadow: 0 0.25rem 0.25rem 0 rgba(82, 129, 248, 0.25);
+   }
+}

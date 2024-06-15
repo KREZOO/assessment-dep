@@ -1,0 +1,127 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.options {
+   width: fit-content;
+
+   .radioContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9375rem;
+
+      .labelRadio {
+         display: flex;
+         align-items: center;
+         gap: 0.625rem;
+
+         .realRadio {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+         }
+
+         .customRadio {
+            position: relative;
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            border: 2px solid $steel-grey-color;
+            transition: border 0.2s ease-in-out;
+
+            &::before {
+               content: '';
+               position: absolute;
+               z-index: 10;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               width: 1rem;
+               height: 1rem;
+               border-radius: 50%;
+               background-color: $steel-grey-color;
+               opacity: 0;
+               transition: opacity 0.2s ease-in-out;
+            }
+         }
+
+         .realRadio:checked + .customRadio::before {
+            opacity: 1;
+         }
+      }
+   }
+
+   .checkboxContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5625rem;
+
+      .labelCheckbox {
+         display: flex;
+         align-items: center;
+         gap: 0.625rem;
+
+         .realCheckbox {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+
+            &:checked + .customCheckbox::before {
+               transform: translate(-50%, -50%) scale(1);
+            }
+         }
+
+         .customCheckbox {
+            position: relative;
+            display: inline-block;
+            width: 1.125rem;
+            height: 1.125rem;
+            border: 2px solid $steel-grey-color;
+            border-radius: 1px;
+
+            &::before {
+               content: '';
+               display: inline-block;
+               height: 9px;
+               width: 12px;
+
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%) scale(0);
+
+               background-image: url('/icons/input-fields/input-check-3.svg');
+               background-repeat: no-repeat;
+               background-size: contain;
+
+               transition: 0.1s ease-in;
+            }
+         }
+      }
+   }
+
+   .textarea {
+      width: 43.125rem;
+      height: 9.375rem;
+      border: 1px solid $dark-grey-color;
+      border-radius: 0.5rem;
+      padding: 0.6875rem 1.25rem;
+      background-color: $bg-white;
+      resize: none;
+      outline: none;
+
+      &::placeholder {
+         color: $dark-grey-color;
+      }
+
+      &:focus {
+         border: 1px solid $bg-blue;
+      }
+   }
+}

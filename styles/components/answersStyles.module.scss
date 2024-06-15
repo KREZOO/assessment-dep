@@ -1,0 +1,111 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.answers {
+   display: flex;
+   flex-direction: column;
+
+   gap: 1.5625rem;
+
+   .labelRadio {
+      display: flex;
+      align-items: center;
+
+      .realRadio {
+         position: absolute;
+         z-index: -1;
+         opacity: 0;
+         width: 0;
+         height: 0;
+         pointer-events: none;
+      }
+
+      .customRadio {
+         position: relative;
+         display: inline-block;
+         width: 24px;
+         height: 24px;
+         border-radius: 50%;
+         border: 2px solid $radio-color;
+         transition: border 0.2s ease-in-out;
+
+         &::before {
+            content: '';
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $radio-checked-color;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+         }
+      }
+
+      .realRadio:checked + .customRadio::before {
+         opacity: 1;
+      }
+
+      .realRadio:checked + .customRadio {
+         border: 2px solid $radio-checked-color;
+      }
+   }
+
+   .labelCheckbox {
+      display: flex;
+      align-items: center;
+
+      .realCheckbox {
+         position: absolute;
+         z-index: -1;
+         opacity: 0;
+         width: 0;
+         height: 0;
+         pointer-events: none;
+
+         &:checked + .customCheckbox::before {
+            transform: translate(-50%, -50%) scale(1);
+         }
+      }
+
+      .customCheckbox {
+         position: relative;
+         display: inline-block;
+         width: 1.125rem;
+         height: 1.125rem;
+         border: 2px solid $dark-grey-color;
+         border-radius: 1px;
+
+         &::before {
+            content: '';
+            display: inline-block;
+            height: 9px;
+            width: 12px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+
+            background-image: url('/icons/input-fields/input-check-2.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            transition: 0.1s ease-in;
+         }
+      }
+   }
+
+   .option {
+      display: flex;
+      gap: 1.25rem;
+   }
+
+   .addButton {
+      margin: 0 auto;
+      width: 32px;
+   }
+}

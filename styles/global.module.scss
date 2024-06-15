@@ -1,0 +1,121 @@
+@import 'variables.module.scss';
+@import 'fonts.module.scss';
+@import 'themes/light.module.scss';
+
+.body {
+   font-family: $font-family;
+   font-size: $font-size;
+}
+
+.fontSize_16_600 {
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+.container_1180 {
+   max-width: 75rem;
+   margin: 0 auto;
+   padding: $container-padding;
+}
+
+.container_1100 {
+   max-width: 70rem;
+   margin: 0 auto;
+   padding: $container-padding;
+}
+
+.mt_20 {
+   margin-top: 1.25rem;
+}
+
+.mb_20 {
+   margin-bottom: 1.25rem;
+}
+
+.mb_25 {
+   margin-bottom: 1.5625rem;
+}
+
+.mb_80 {
+   margin-bottom: 5rem;
+}
+
+.mr_4 {
+   margin-right: 0.25rem;
+}
+
+.f1 {
+   flex: 1;
+}
+
+.flexСolumn {
+   display: flex;
+   flex-direction: column;
+}
+
+.gap_25 {
+   gap: 1.5625rem;
+}
+
+.button {
+   font-weight: 400;
+   font-size: 1.125rem;
+   color: $main-color;
+
+   width: 100%;
+   padding: 0.875rem 0;
+
+   background-color: $bg-white;
+   border-radius: 8px;
+
+   transition:
+      background-color 0.2s ease-in-out,
+      color 0.3s ease-in-out;
+
+   &:hover {
+      background: $bg-blue;
+      color: $bg-white;
+   }
+
+   &:active {
+      background: $bg-dark-purple;
+   }
+}
+
+/* Animation */
+
+.transitionEnter_dropdownMenu {
+   transition:
+      opacity 100ms ease-out,
+      transform 100ms ease-out;
+   opacity: 0;
+   transform: scale(0.95);
+}
+
+.transitionEnterFrom_dropdownMenu {
+   opacity: 0;
+   transform: scale(0.95);
+}
+
+.transitionEnterTo_dropdownMenu {
+   opacity: 1;
+   transform: scale(1);
+}
+
+.transitionLeave_dropdownMenu {
+   transition:
+      opacity 75ms ease-in,
+      transform 75ms ease-in;
+   opacity: 1;
+   transform: scale(1);
+}
+
+.transitionLeaveFrom_dropdownMenu {
+   opacity: 1;
+   transform: scale(1);
+}
+
+.transitionLeaveTo_dropdownMenu {
+   opacity: 0;
+   transform: scale(0.95);
+}

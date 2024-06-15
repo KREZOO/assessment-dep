@@ -1,0 +1,12 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.description {
+   width: 100%;
+   border: 1px solid $radio-color;
+   border-radius: 0.5rem;
+   padding: 1.25rem 3.75rem 1.125rem 3.75rem;
+   box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+   background: $second-color;
+   font-size: 0.875rem;
+}

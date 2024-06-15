@@ -1,0 +1,27 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.input {
+   width: 100%;
+   border: 1px solid $dark-grey-color;
+   background-color: $bg-white;
+   border-radius: 0.5rem;
+
+   &::placeholder {
+      color: $dark-grey-color;
+   }
+
+   &:focus {
+      border: 1px solid $bg-blue;
+   }
+}
+
+.large {
+   height: 3.125rem;
+   padding: 0.6875rem 1.25rem;
+}
+
+.small {
+   height: 2.5rem;
+   padding: 0.75rem 1.25rem 0.6875rem 1.25rem;
+}

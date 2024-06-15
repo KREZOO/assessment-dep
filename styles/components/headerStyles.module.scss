@@ -1,0 +1,46 @@
+@import '@/styles/variables.module';
+@import '@/styles/themes/light.module.scss';
+
+.header {
+   background-color: $bg-dark-blue;
+
+   padding: 1.5625rem 0;
+
+   .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navigation {
+         display: flex;
+         align-items: center;
+         gap: 1.5625rem;
+
+         .list {
+            display: flex;
+            align-items: center;
+            gap: 1.5625rem;
+
+            li {
+               padding: 20px;
+            }
+
+            .link {
+               color: $second-color;
+               font-weight: 700;
+               font-size: 1rem;
+            }
+         }
+
+         .button {
+            color: $second-color;
+            font-weight: 700;
+            font-size: 1rem;
+
+            border-radius: 100px;
+            padding: 19px;
+            background-color: $bg-blue;
+         }
+      }
+   }
+}

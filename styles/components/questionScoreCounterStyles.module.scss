@@ -1,0 +1,36 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.questionScoreCounter {
+   display: flex;
+   gap: 0.625rem;
+   height: fit-content;
+   align-items: center;
+
+   .count {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $dark-grey-color;
+      padding: 0px 0.5rem;
+      width: 5.9375rem;
+      height: 1.75rem;
+      background-color: $bg-white;
+
+      .buttons {
+         display: flex;
+         flex-direction: column;
+
+         .button {
+            width: 0.75rem;
+            height: 0.75rem;
+         }
+      }
+   }
+
+   span {
+      font-size: 0.75rem;
+      line-height: 233%;
+   }
+}

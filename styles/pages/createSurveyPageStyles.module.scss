@@ -1,0 +1,13 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.main {
+   padding-bottom: 9.0625rem;
+
+   .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5625rem;
+   }
+}

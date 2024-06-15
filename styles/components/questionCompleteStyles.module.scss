@@ -1,0 +1,33 @@
+@import '../variables.module.scss';
+@import '../themes/light.module.scss';
+
+.question {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1.5625rem;
+   width: 100%;
+   border-radius: 0.5rem;
+   background-color: $second-color;
+   box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+   padding: 4.5625rem 1.25rem 1.5625rem 1.25rem;
+
+   .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0.75rem 1.25rem;
+      background-color: $bg-blue;
+      border-radius: 0.5rem 0.5rem 0 0;
+      font-weight: 600;
+      font-size: 1.125rem;
+      color: $bg-white;
+   }
+
+   .title {
+      font-weight: 600;
+      font-size: 1rem;
+   }
+}
